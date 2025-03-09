@@ -59,10 +59,10 @@ function NavBar() {
               NewsFk
             </IconButton>
             <Box sx={{ display: { xs: 'none', md: 'flex' }, mx: 'auto' }}>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" color="info" size="small" onClick={() => window.location.href = '/'}>
                 News Papers
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" color="info" size="small" onClick={() => window.location.href = '/news-analyzer'}>
                 News Analyzer
               </Button>
             </Box>
@@ -101,23 +101,8 @@ function NavBar() {
                     <CloseRoundedIcon />
                   </IconButton>
                 </Box>
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
-                <MenuItem>Highlights</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Blog</MenuItem>
-                <Divider sx={{ my: 3 }} />
-                <MenuItem>
-                  <Button color="primary" variant="contained" fullWidth>
-                    Sign up
-                  </Button>
-                </MenuItem>
-                <MenuItem>
-                  <Button color="primary" variant="outlined" fullWidth>
-                    Sign in
-                  </Button>
-                </MenuItem>
+                <MenuItem>News Papers</MenuItem>
+                <MenuItem>News Analyzer</MenuItem>
               </Box>
             </Drawer>
           </Box>
